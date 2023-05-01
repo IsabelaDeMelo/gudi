@@ -1,0 +1,69 @@
+.searchContainer {
+  @include bg-img("header2x.png");
+  width: 100%;
+  height: 76vh;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include for-phone-only {
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+  }
+
+  section {
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+
+    @include for-phone-only {
+      width: 60%;
+      height: 25vh;
+    }
+
+    h1 {
+      color: $blue;
+      font-family: "ArgentumSansBold";
+      font-size: 3rem;
+      margin-bottom: 1rem;
+
+      @include for-phone-only {
+        font-size: 1.5rem;
+      }
+    }
+
+    input {
+      width: 26vw;
+      height: 6vh;
+      border: none;
+      border-radius: 1.5rem;
+      padding-left: 1.5rem;
+
+      @include for-phone-only {
+        width: 90%;
+        height: 4vh;
+        font-size: 0.7rem;
+        padding-left: 0.5rem;
+      }
+    }
+
+    input:focus {
+      outline: 2.5px solid $light-blue;
+      transition: 0.2s;
+    }
+
+    button {
+      width: 11vw;
+      margin-top: 1.5rem;
+
+      @include for-phone-only {
+        width: 50%;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

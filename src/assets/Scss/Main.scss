@@ -1,0 +1,13 @@
+// Conf e global
+@import "./conf";
+@import "./global.scss";
+
+// Components
+@import "../../Components/Header/Nav/style.scss";
+@import "../../Components/Header/Search/style.scss";
+@import "../../Components/Button/style.scss";
+@import "../../Components/Main/BigCards/style.scss";
+@import "../../Components/Main/SmallCard/style.scss";
+@import "../../Components/Main/Mural/style.scss";
+@import "../../Components/Main/Contato/style.scss";
+@import "../../Components/Footer/style.scss";

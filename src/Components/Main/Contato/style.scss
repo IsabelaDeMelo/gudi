@@ -1,0 +1,42 @@
+.contatoBox {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: $blue;
+
+  h2 {
+    font-family: "ArgentumSansBold";
+    font-size: 3rem;
+    color: $white;
+  }
+
+  input {
+    width: 35vw;
+    height: 8vh;
+    font-family: "ArgentumSansLight";
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+  }
+
+  input:nth-child(4) {
+    height: 15vh;
+    padding-bottom: 4rem;
+  }
+
+  input:focus {
+    outline: 2.5px solid $light-blue;
+    transition: 0.2s;
+  }
+
+  button {
+    border: 1px solid $white;
+  }
+
+  button:hover {
+    @include bigcard-hover($white, $blue)
+  }
+}

@@ -1,0 +1,47 @@
+.logo {
+  width: 14vw;
+  display: flex;
+  gap: 1rem;
+  color: $blue;
+  font-family: "Argentum sans";
+
+  h2 {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  img {
+    height: 5vh;
+  }
+}
+
+.footerBox {
+  color: $blue;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h3 {
+    font-family: "ArgentumSansBold";
+  }
+
+  ul {
+    a {
+      text-decoration: none;
+      color: $blue;
+    }
+
+    li {
+      list-style: none;
+      font-family: "ArgentumSansMedium";
+    }
+  }
+}
+
+.footerIndex {
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 2rem;
+}

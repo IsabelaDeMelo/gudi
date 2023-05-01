@@ -1,0 +1,90 @@
+///// MURAL FOTOS /////
+
+.muralContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.text {
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-family: "ArgentumSansMedium";
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    width: 40%;
+    font-family: "ArgentumSansBold";
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  img {
+    width: 20%;
+    transition: .3s;
+  }
+
+  img:hover {
+    transition: .3s;
+    transform: scale(1.05);
+  }
+}
+
+///// MURAL CARDS /////
+
+.cardsBox {
+  display: flex;
+  justify-content: center;
+}
+
+.cards {
+  width: 70%;
+  height: 55vh;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.grey-bg {
+  @include muralcard-style($white-grey, $blue);
+
+  img {
+    @include muralcard-img;
+  }
+
+  .coco {
+    width: 4.5vw;
+  }
+}
+
+.blue-bg {
+  @include muralcard-style($blue, $white);
+
+  h3 {
+    width: 100%;
+  }
+
+  img {
+    @include muralcard-img;
+  }
+}

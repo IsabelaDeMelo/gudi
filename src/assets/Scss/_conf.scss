@@ -1,0 +1,150 @@
+//////// COLORS ////////
+$blue: #005bd5;
+$light-blue: #b0d2ffec;
+$grey: #8b8b8b;
+$white: #ffffff;
+$white-grey: #eeeeee;
+$light-grey: #afb3b8;
+
+//////// MIXINS ////////
+//// BUTTON ////
+@mixin btn-hover($color) {
+  border: 1px solid $blue;
+  color: $color;
+  background-color: transparent;
+  transition: 0.3s;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+//// HEADER ////
+@mixin bg-img($img) {
+  background-image: url("../Images/header2x.png");
+}
+
+//// MAIN ////
+// BIG CARD //
+@mixin bigcard-style($background, $color) {
+  width: 50%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $color;
+  background-color: $background;
+  padding-left: 4rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  span {
+    font-family: "ArgentumSansLight";
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  p {
+    width: 80%;
+    font-family: "ArgentumSansLight";
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  button {
+    font-family: "ArgentumSansRegular";
+    background-color: transparent;
+    border: 1px solid $white;
+  }
+}
+
+@mixin bigcard-hover($background, $color) {
+  background-color: $background;
+  color: $color;
+}
+
+// SMALL CARD //
+@mixin rj-img($img) {
+  background-image: url("../Images/rj2x.png");
+}
+
+@mixin rioDasOstras-img($img) {
+  background-image: url("../Images/crianca-mar2x.png");
+}
+
+@mixin caldasNovas-img($img) {
+  background-image: url("../Images/lago2x.png");
+}
+
+@mixin amazonia-img($img) {
+  background-image: url("../Images/mulher-barco2x.png");
+}
+
+@mixin smallcard-style() {
+  width: 25%;
+  height: 40vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    border: 1px solid $white;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+  }
+}
+
+// MURAL CARD //
+@mixin muralcard-style($backgroundcolor, $color) {
+  width: 14vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: $backgroundcolor;
+  color: $color;
+  font-family: "ArgentumSansBold";
+
+  h3 {
+    width: 60%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+@mixin muralcard-img() {
+  width: 6vw;
+}
+
+//////// MEDIA QUERY ////////
+@mixin for-phone-only {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}

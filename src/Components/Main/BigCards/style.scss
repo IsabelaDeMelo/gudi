@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  height: 195vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include for-phone-only {
+    
+  }
+
+}
+
+.bigCardImg {
+  width: 50%;
+  height: 65vh;
+
+  @include for-phone-only {
+    height: 20vh;
+  }
+}
+
+//////// CARD AZUL 0 ////////
+
+.cardBlue0 {
+  @include bigcard-style($white, $white);
+  background-image: linear-gradient($blue, #002f6e);
+
+  @include for-phone-only {
+    height: 20vh;
+  }
+
+  h2 {
+    width: 90%;
+    font-family: "ArgentumSansBlack";
+    font-size: 3.5rem;
+
+    @include for-phone-only {
+      font-size: 1rem;
+    }
+  }
+
+  button:hover {
+    @include bigcard-hover($white, $blue);
+  }
+}
+
+//////// CARD AZUL 1 ////////
+
+.cardBlue1 {
+  @include bigcard-style($white, $white);
+  background-image: linear-gradient($blue, #002f6e);
+
+  @include for-phone-only {
+      height: 20vh;
+  }
+
+  h2 {
+    width: 100%;
+    font-family: "ArgentumSansBlack";
+    font-size: 3rem;
+
+    @include for-phone-only {
+      font-size: 1rem;
+    }
+  }
+
+  button:hover {
+    @include bigcard-hover($white, $blue);
+  }
+}
+
+//////// CARD BRANCO ////////
+
+.line {
+  width: 5vw;
+  height: 0.1vh;
+  background-color: $blue;
+}
+
+.cardWhite {
+  @include bigcard-style($white, $blue);
+
+  @include for-phone-only {
+      height: 20vh;
+  }
+
+  h2 {
+    width: 90%;
+    font-family: "ArgentumSansBlack";
+    font-size: 3.5rem;
+
+    @include for-phone-only {
+      font-size: 1rem;
+    }
+  }
+
+  button {
+    font-family: "ArgentumSansRegular";
+    color: $blue;
+    background-color: transparent;
+    border: 1px solid $blue;
+  }
+
+  button:hover {
+    @include bigcard-hover($blue, $white);
+  }
+}

@@ -1,0 +1,25 @@
+.smallContainer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+
+.rj {
+  @include rj-img("../Images/rj2x.png");
+  @include smallcard-style;
+}
+
+.rio {
+  @include rioDasOstras-img("../Images/crianca-mar2x.png");
+  @include smallcard-style;
+}
+
+.caldas {
+  @include caldasNovas-img("../Images/lago2x.png");
+  @include smallcard-style;
+}
+
+.amazonia {
+  @include amazonia-img("../Images/mulher-barco2x.png");
+  @include smallcard-style;
+}

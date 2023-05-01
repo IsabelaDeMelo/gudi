@@ -1,0 +1,21 @@
+.btn {
+  button {
+    color: $white;
+    background-color: $blue;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-family: "ArgentumSansSemiBold";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5s;
+  }
+
+  button:hover {
+    border: 1px solid $white;
+    transition: 0.3s;
+    transform: scale(1.05);
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
