@@ -20,6 +20,10 @@
     border: none;
     border-radius: 2rem;
     padding: 1rem;
+
+    @include for-phone-only {
+     width: 70vw;
+    }
   }
 
   input:nth-child(4) {

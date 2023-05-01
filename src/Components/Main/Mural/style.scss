@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
+
+  @include for-phone-only {
+    padding-bottom: 8rem;
+  }
 }
 
 .text {
@@ -22,6 +26,10 @@
     font-family: "ArgentumSansBold";
     font-size: 2.5rem;
     text-align: center;
+
+    @include for-phone-only {
+      width: 80%;
+    }
   }
 }
 
@@ -30,6 +38,10 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2rem;
+
+  @include for-phone-only {
+    padding-bottom: 6rem;
+  }
 
   div {
     width: 100%;
@@ -41,6 +53,10 @@
   img {
     width: 20%;
     transition: .3s;
+
+    @include for-phone-only {
+      width: 30%;
+    }
   }
 
   img:hover {
@@ -63,6 +79,12 @@
   gap: 1.5rem;
   justify-content: center;
   align-items: center;
+
+  @include for-phone-only {
+    width: 100%;
+    height: 60vh;
+    flex-wrap: wrap;
+  }
 }
 
 .grey-bg {

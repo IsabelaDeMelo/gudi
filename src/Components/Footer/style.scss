@@ -5,9 +5,18 @@
   color: $blue;
   font-family: "Argentum sans";
 
+  @include for-phone-only {
+    width: 20vw;
+    height: 5vh;
+  }
+
   h2 {
     font-size: 0.8rem;
     line-height: 1rem;
+
+    @include for-phone-only {
+      opacity: 0;
+    }
   }
 
   img {
@@ -16,10 +25,15 @@
 }
 
 .footerBox {
+  height: 25vh;
   color: $blue;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @include for-phone-only {
+    gap: .3rem;
+  }
 
   h3 {
     font-family: "ArgentumSansBold";
@@ -44,4 +58,10 @@
   justify-content: space-around;
   align-items: center;
   line-height: 2rem;
+
+  @include for-phone-only {
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: space-evenly;
+  }
 }

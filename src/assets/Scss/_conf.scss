@@ -6,6 +6,7 @@ $white: #ffffff;
 $white-grey: #eeeeee;
 $light-grey: #afb3b8;
 
+
 //////// MIXINS ////////
 //// BUTTON ////
 @mixin btn-hover($color) {
@@ -17,10 +18,12 @@ $light-grey: #afb3b8;
   cursor: pointer;
 }
 
+
 //// HEADER ////
 @mixin bg-img($img) {
   background-image: url("../Images/header2x.png");
 }
+
 
 //// MAIN ////
 // BIG CARD //
@@ -44,6 +47,10 @@ $light-grey: #afb3b8;
     font-family: "ArgentumSansLight";
     text-transform: uppercase;
     letter-spacing: 3px;
+
+    @include for-phone-only {
+      font-size: .8rem;
+    }
   }
 
   p {
@@ -64,6 +71,7 @@ $light-grey: #afb3b8;
   background-color: $background;
   color: $color;
 }
+
 
 // SMALL CARD //
 @mixin rj-img($img) {
@@ -91,12 +99,20 @@ $light-grey: #afb3b8;
   justify-content: center;
   align-items: center;
 
+  @include for-phone-only {
+    width: 50vw;
+    height: 30vh;
+    background-size: cover;
+    background-position: center center;
+  }
+
   button {
     border: 1px solid $white;
     background-color: transparent;
     backdrop-filter: blur(50px);
   }
 }
+
 
 // MURAL CARD //
 @mixin muralcard-style($backgroundcolor, $color) {
@@ -111,6 +127,11 @@ $light-grey: #afb3b8;
   color: $color;
   font-family: "ArgentumSansBold";
 
+  @include for-phone-only {
+    width: 35vw;
+    height: 30vh;
+  }
+
   h3 {
     width: 60%;
     text-align: center;
@@ -121,6 +142,7 @@ $light-grey: #afb3b8;
 @mixin muralcard-img() {
   width: 6vw;
 }
+
 
 //////// MEDIA QUERY ////////
 @mixin for-phone-only {
@@ -140,11 +162,6 @@ $light-grey: #afb3b8;
 }
 @mixin for-desktop-up {
   @media (min-width: 1200px) {
-    @content;
-  }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) {
     @content;
   }
 }
