@@ -3,19 +3,6 @@
   height: 40vh;
   display: flex;
 
-  @include for-phone-only {
-    height: 60vh;
-    flex-wrap: wrap;
-  }
-
-  @include for-tablet-landscape-up {
-    height: 25vh;
-  }
-
-  @include for-desktop-up {
-    height: 30vh;
-  }
-
   button:hover {
     backdrop-filter: blur(0);
     transition: 0.3s;

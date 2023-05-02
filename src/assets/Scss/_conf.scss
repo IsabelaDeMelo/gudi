@@ -176,8 +176,8 @@ $light-grey: #afb3b8;
   }
 }
 
-// MEDIA QUERY //
 
+//////// MEDIA QUERY ////////
 @mixin for-phone-only {
   @media (min-width: 480px) and (max-width: 768px) {
     @content;

@@ -15,14 +15,6 @@
     justify-content: center;
   }
 
-  @include for-tablet-landscape-up {
-    height: 40vh;
-  }
-
-  @include for-desktop-up {
-    height: 55vh;
-  }
-
   section {
     width: 40vw;
     height: 70vh;
@@ -31,43 +23,11 @@
     justify-content: center;
     padding-left: 4rem;
 
-    @include for-phone-only {
-      width: 60%;
-      height: 30vh;
-      padding: 0;
-      align-items: center;
-    }
-
-    @include for-tablet-landscape-up {
-      width: 70%;
-      justify-content: flex-start;
-    }
-
-    @include for-desktop-up {
-      width: 80%;
-      height: 50vh;
-      justify-content: center;
-    }
-
     h1 {
       color: $blue;
       font-family: "ArgentumSansBold";
       font-size: 3rem;
       margin-bottom: 1rem;
-
-      @include for-phone-only {
-        font-size: 2rem;
-      }
-
-      @include for-tablet-landscape-up {
-        width: 80%;
-        font-size: 2.5rem;
-        padding-top: 1rem;
-      }
-
-      @include for-desktop-up {
-        width: 60%;
-      }
     }
 
     input {
@@ -76,21 +36,6 @@
       border: none;
       border-radius: 1.5rem;
       padding-left: 1.5rem;
-
-      @include for-phone-only {
-        width: 55vw;
-        height: 5vh;
-        font-size: 0.7rem;
-        padding-left: 0.5rem;
-      }
-
-      @include for-tablet-landscape-up {
-        width: 40vw;
-      }
-
-      @include for-desktop-up {
-        width: 30vw;
-      }
     }
 
     input:focus {
@@ -101,19 +46,6 @@
     button {
       width: 11vw;
       margin-top: 1.5rem;
-
-      @include for-phone-only {
-        width: 100%;
-        font-size: 0.7rem;
-      }
-
-      @include for-tablet-landscape-up {
-        width: 30%;
-      }
-
-      @include for-desktop-up {
-        width: 20%;
-      }
     }
   }
 }

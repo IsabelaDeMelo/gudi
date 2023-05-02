@@ -20,18 +20,6 @@
     border: none;
     border-radius: 2rem;
     padding: 1rem;
-
-    @include for-phone-only {
-      width: 70vw;
-    }
-
-    @include for-tablet-landscape-up {
-      width: 60vw;
-    }
-
-    @include for-desktop-up {
-      width: 50vw;
-    }
   }
 
   input:nth-child(4) {

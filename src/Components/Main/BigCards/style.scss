@@ -3,36 +3,11 @@
   height: 195vh;
   display: flex;
   flex-wrap: wrap;
-
-  @include for-phone-only {
-    height: 225vh;
-  }
-
-  @include for-tablet-landscape-up {
-    height: 105vh;
-  }
-
-  @include for-desktop-up {
-    height: 135vh;
-  }
 }
 
 .bigCardImg {
   width: 50%;
   height: 65vh;
-
-  @include for-phone-only {
-    width: 100%;
-    height: 40vh;
-  }
-
-  @include for-tablet-landscape-up {
-    height: 35vh;
-  }
-
-  @include for-desktop-up {
-    height: 45vh;
-  }
 }
 
 //////// CARD AZUL 0 ////////
@@ -41,35 +16,10 @@
   @include bigcard-style($white, $white);
   background-image: linear-gradient($blue, #002f6e);
 
-  @include for-phone-only {
-    width: 100%;
-    height: 35vh;
-  }
-
-  @include for-tablet-landscape-up {
-    height: 35vh;
-  }
-
-  @include for-desktop-up {
-    height: 45vh;
-  }
-
   h2 {
     width: 90%;
     font-family: "ArgentumSansBlack";
     font-size: 3.5rem;
-
-    @include for-phone-only {
-      font-size: 1.5rem;
-    }
-
-    @include for-tablet-landscape-up {
-      font-size: 1.4rem;
-    }
-
-    @include for-desktop-up {
-      font-size: 2rem;
-    }
   }
 
   button:hover {
@@ -83,35 +33,10 @@
   @include bigcard-style($white, $white);
   background-image: linear-gradient($blue, #002f6e);
 
-  @include for-phone-only {
-    width: 100%;
-    height: 35vh;
-  }
-
-  @include for-tablet-landscape-up {
-    height: 35vh;
-  }
-
-  @include for-desktop-up {
-    height: 45vh;
-  }
-
   h2 {
     width: 100%;
     font-family: "ArgentumSansBlack";
     font-size: 3rem;
-
-    @include for-phone-only {
-      font-size: 1.5rem;
-    }
-
-    @include for-tablet-landscape-up {
-      font-size: 1.4rem;
-    }
-
-    @include for-desktop-up {
-      font-size: 2rem;
-    }
   }
 
   button:hover {
@@ -130,36 +55,10 @@
 .cardWhite {
   @include bigcard-style($white, $blue);
 
-  @include for-phone-only {
-    width: 100%;
-    height: 35vh;
-  }
-
-  @include for-tablet-landscape-up {
-    width: 50vw;
-    height: 35vh;
-  }
-
-  @include for-desktop-up {
-    height: 45vh;
-  }
-
   h2 {
     width: 90%;
     font-family: "ArgentumSansBlack";
     font-size: 3.5rem;
-
-    @include for-phone-only {
-      font-size: 1.5rem;
-    }
-
-    @include for-tablet-landscape-up {
-      font-size: 1.4rem;
-    }
-
-    @include for-desktop-up {
-      font-size: 2rem;
-    }
   }
 
   button {

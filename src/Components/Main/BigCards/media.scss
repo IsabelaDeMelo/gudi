@@ -1,0 +1,122 @@
+.container {
+  @include for-phone-only {
+    height: 225vh;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 105vh;
+  }
+
+  @include for-desktop-up {
+    height: 135vh;
+  }
+}
+
+.bigCardImg {
+  @include for-phone-only {
+    width: 100%;
+    height: 40vh;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 35vh;
+  }
+
+  @include for-desktop-up {
+    height: 45vh;
+  }
+}
+
+//////// CARD AZUL 0 ////////
+
+.cardBlue0 {
+  @include for-phone-only {
+    width: 100%;
+    height: 35vh;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 35vh;
+  }
+
+  @include for-desktop-up {
+    height: 45vh;
+  }
+
+  h2 {
+    @include for-phone-only {
+      font-size: 1.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 1.4rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 2rem;
+    }
+  }
+}
+
+//////// CARD AZUL 1 ////////
+
+.cardBlue1 {
+  @include for-phone-only {
+    width: 100%;
+    height: 35vh;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 35vh;
+  }
+
+  @include for-desktop-up {
+    height: 45vh;
+  }
+
+  h2 {
+    @include for-phone-only {
+      font-size: 1.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 1.4rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 2rem;
+    }
+  }
+}
+
+//////// CARD BRANCO ////////
+
+.cardWhite {
+  @include for-phone-only {
+    width: 100%;
+    height: 35vh;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 50vw;
+    height: 35vh;
+  }
+
+  @include for-desktop-up {
+    height: 45vh;
+  }
+
+  h2 {
+    @include for-phone-only {
+      font-size: 1.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 1.4rem;
+    }
+
+    @include for-desktop-up {
+      font-size: 2rem;
+    }
+  }
+}

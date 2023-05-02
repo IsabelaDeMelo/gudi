@@ -1,0 +1,14 @@
+.smallContainer {
+  @include for-phone-only {
+    height: 60vh;
+    flex-wrap: wrap;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 25vh;
+  }
+
+  @include for-desktop-up {
+    height: 30vh;
+  }
+}
