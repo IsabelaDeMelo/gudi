@@ -114,6 +114,10 @@ $light-grey: #afb3b8;
     height: 20vh;
   }
 
+  @include for-desktop-up {
+    height: 30vh;
+  }
+
   button {
     border: 1px solid $white;
     background-color: transparent;
@@ -149,6 +153,10 @@ $light-grey: #afb3b8;
     height: 30vh;
   }
 
+  @include for-desktop-up {
+    width: 20vw;
+  }
+
   h3 {
     width: 60%;
     text-align: center;
@@ -168,7 +176,8 @@ $light-grey: #afb3b8;
   }
 }
 
-//////// MEDIA QUERY ////////
+// MEDIA QUERY //
+
 @mixin for-phone-only {
   @media (min-width: 480px) and (max-width: 768px) {
     @content;

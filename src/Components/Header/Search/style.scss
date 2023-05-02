@@ -43,6 +43,12 @@
       justify-content: flex-start;
     }
 
+    @include for-desktop-up {
+      width: 80%;
+      height: 50vh;
+      justify-content: center;
+    }
+
     h1 {
       color: $blue;
       font-family: "ArgentumSansBold";
@@ -57,6 +63,10 @@
         width: 80%;
         font-size: 2.5rem;
         padding-top: 1rem;
+      }
+
+      @include for-desktop-up {
+        width: 60%;
       }
     }
 
@@ -77,6 +87,10 @@
       @include for-tablet-landscape-up {
         width: 40vw;
       }
+
+      @include for-desktop-up {
+        width: 30vw;
+      }
     }
 
     input:focus {
@@ -95,6 +109,10 @@
 
       @include for-tablet-landscape-up {
         width: 30%;
+      }
+
+      @include for-desktop-up {
+        width: 20%;
       }
     }
   }

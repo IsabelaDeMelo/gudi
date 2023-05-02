@@ -56,7 +56,7 @@
 
   img {
     width: 20%;
-    transition: .3s;
+    transition: 0.3s;
 
     @include for-phone-only {
       width: 30%;
@@ -65,10 +65,14 @@
     @include for-tablet-landscape-up {
       width: 25%;
     }
+
+    @include for-desktop-up {
+      width: 25%;
+    }
   }
 
   img:hover {
-    transition: .3s;
+    transition: 0.3s;
     transform: scale(1.05);
   }
 }
@@ -97,7 +101,10 @@
   @include for-tablet-landscape-up {
     width: 100%;
     flex-wrap: wrap;
-    border: 1px solid red;
+  }
+
+  @include for-desktop-up {
+    width: 100%;
   }
 }
 

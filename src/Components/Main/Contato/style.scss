@@ -22,11 +22,15 @@
     padding: 1rem;
 
     @include for-phone-only {
-     width: 70vw;
+      width: 70vw;
     }
 
     @include for-tablet-landscape-up {
       width: 60vw;
+    }
+
+    @include for-desktop-up {
+      width: 50vw;
     }
   }
 
@@ -45,6 +49,6 @@
   }
 
   button:hover {
-    @include bigcard-hover($white, $blue)
+    @include bigcard-hover($white, $blue);
   }
 }

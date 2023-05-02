@@ -5,7 +5,6 @@
   display: flex;
   color: $blue;
   background-color: $white;
-  border: 1px solid red;
 }
 
 .logoContainer {
@@ -55,8 +54,8 @@
     }
 
     @include for-desktop-up {
-        width: 50%;
-        padding-left: 2rem;
+      width: 50%;
+      padding-left: 2rem;
     }
   }
 }
@@ -104,7 +103,6 @@
 
       @include for-desktop-up {
         font-size: 1.2rem;
-        gap: 1.5rem;
       }
     }
 
