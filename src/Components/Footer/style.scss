@@ -10,12 +10,21 @@
     height: 5vh;
   }
 
+  @include for-tablet-landscape-up {
+    width: 30vw;
+    padding-top: 1rem;
+  }
+
   h2 {
     font-size: 0.8rem;
     line-height: 1rem;
 
     @include for-phone-only {
       opacity: 0;
+    }
+
+    @include for-tablet-landscape-up {
+      width: 10vw;
     }
   }
 
@@ -40,6 +49,10 @@
   }
 
   ul {
+    @include for-tablet-landscape-up {
+      width: 20vw;
+    }
+
     a {
       text-decoration: none;
       color: $blue;
@@ -63,5 +76,9 @@
     flex-wrap: wrap;
     padding-top: 2rem;
     justify-content: space-evenly;
+  }
+
+  @include for-tablet-landscape-up {
+    flex-wrap: wrap;
   }
 }

@@ -14,6 +14,10 @@
     height: 60vh;
     flex-wrap: wrap;
   }
+
+  @include for-tablet-landscape-up {
+    height: 25vh;
+  }
 }
 
 .rj {

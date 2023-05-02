@@ -24,6 +24,10 @@
     @include for-phone-only {
      width: 70vw;
     }
+
+    @include for-tablet-landscape-up {
+      width: 60vw;
+    }
   }
 
   input:nth-child(4) {

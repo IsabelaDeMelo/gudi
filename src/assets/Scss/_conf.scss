@@ -6,7 +6,6 @@ $white: #ffffff;
 $white-grey: #eeeeee;
 $light-grey: #afb3b8;
 
-
 //////// MIXINS ////////
 //// BUTTON ////
 @mixin btn-hover($color) {
@@ -18,12 +17,10 @@ $light-grey: #afb3b8;
   cursor: pointer;
 }
 
-
 //// HEADER ////
 @mixin bg-img($img) {
   background-image: url("../Images/header2x.png");
 }
-
 
 //// MAIN ////
 // BIG CARD //
@@ -49,7 +46,11 @@ $light-grey: #afb3b8;
     letter-spacing: 3px;
 
     @include for-phone-only {
-      font-size: .8rem;
+      font-size: 0.8rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 0.7rem;
     }
   }
 
@@ -58,6 +59,10 @@ $light-grey: #afb3b8;
     font-family: "ArgentumSansLight";
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
+
+    @include for-tablet-landscape-up {
+      width: 90%;
+    }
   }
 
   button {
@@ -71,7 +76,6 @@ $light-grey: #afb3b8;
   background-color: $background;
   color: $color;
 }
-
 
 // SMALL CARD //
 @mixin rj-img($img) {
@@ -106,13 +110,21 @@ $light-grey: #afb3b8;
     background-position: center center;
   }
 
+  @include for-tablet-landscape-up {
+    height: 20vh;
+  }
+
   button {
     border: 1px solid $white;
     background-color: transparent;
     backdrop-filter: blur(50px);
+
+    @include for-tablet-landscape-up {
+      height: 7vh;
+      font-size: 0.7rem;
+    }
   }
 }
-
 
 // MURAL CARD //
 @mixin muralcard-style($backgroundcolor, $color) {
@@ -132,36 +144,45 @@ $light-grey: #afb3b8;
     height: 30vh;
   }
 
+  @include for-tablet-landscape-up {
+    width: 20vw;
+    height: 30vh;
+  }
+
   h3 {
     width: 60%;
     text-align: center;
     letter-spacing: 1px;
+
+    @include for-tablet-landscape-up {
+      width: 70%;
+    }
   }
 }
 
 @mixin muralcard-img() {
   width: 6vw;
-}
 
+  @include for-phone-only {
+    width: 40%;
+  }
+}
 
 //////// MEDIA QUERY ////////
 @mixin for-phone-only {
-  @media (max-width: 480px) {
+  @media (min-width: 480px) and (max-width: 768px) {
     @content;
   }
 }
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) {
-    @content;
-  }
-}
+
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) {
+  @media (min-width: 769px) and (max-width: 1023px) {
     @content;
   }
 }
+
 @mixin for-desktop-up {
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) and (max-width: 1200px) {
     @content;
   }
 }

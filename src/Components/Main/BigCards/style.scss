@@ -8,6 +8,9 @@
     height: 225vh;
   }
 
+  @include for-tablet-landscape-up {
+    height: 105vh;
+  }
 }
 
 .bigCardImg {
@@ -18,6 +21,11 @@
     width: 100%;
     height: 40vh;
   }
+
+  @include for-tablet-landscape-up {
+    height: 35vh;
+  }
+
 }
 
 //////// CARD AZUL 0 ////////
@@ -31,13 +39,22 @@
     height: 35vh;
   }
 
+  @include for-tablet-landscape-up {
+    height: 35vh;
+  }
+
+
   h2 {
     width: 90%;
     font-family: "ArgentumSansBlack";
     font-size: 3.5rem;
 
     @include for-phone-only {
-      font-size: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 1.4rem;
     }
   }
 
@@ -57,13 +74,21 @@
     height: 35vh;
   }
 
+  @include for-tablet-landscape-up {
+    height: 35vh;
+  }
+
   h2 {
     width: 100%;
     font-family: "ArgentumSansBlack";
     font-size: 3rem;
 
     @include for-phone-only {
-      font-size: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 1.4rem;
     }
   }
 
@@ -88,13 +113,22 @@
     height: 35vh;
   }
 
+  @include for-tablet-landscape-up {
+    width: 50vw;
+    height: 35vh;
+  }
+
   h2 {
     width: 90%;
     font-family: "ArgentumSansBlack";
     font-size: 3.5rem;
 
     @include for-phone-only {
-      font-size: 1rem;
+      font-size: 1.5rem;
+    }
+
+    @include for-tablet-landscape-up {
+      font-size: 1.4rem;
     }
   }
 

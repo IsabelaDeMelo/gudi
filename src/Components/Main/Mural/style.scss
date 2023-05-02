@@ -30,6 +30,10 @@
     @include for-phone-only {
       width: 80%;
     }
+
+    @include for-tablet-landscape-up {
+      width: 70%;
+    }
   }
 }
 
@@ -56,6 +60,10 @@
 
     @include for-phone-only {
       width: 30%;
+    }
+
+    @include for-tablet-landscape-up {
+      width: 25%;
     }
   }
 
@@ -85,6 +93,12 @@
     height: 60vh;
     flex-wrap: wrap;
   }
+
+  @include for-tablet-landscape-up {
+    width: 100%;
+    flex-wrap: wrap;
+    border: 1px solid red;
+  }
 }
 
 .grey-bg {
@@ -96,6 +110,10 @@
 
   .coco {
     width: 4.5vw;
+
+    @include for-phone-only {
+      width: 35%;
+    }
   }
 }
 
