@@ -5,11 +5,11 @@ import Contato from "./Contato";
 
 export default function main() {
   return (
-    <section>
+    <main>
       <BigCard />
       <SmallCard />
       <Mural />
       <Contato />
-    </section>
+    </main>
   );
 }

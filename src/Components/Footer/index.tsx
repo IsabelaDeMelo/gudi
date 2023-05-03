@@ -3,7 +3,7 @@ import Footer from "../Footer/props";
 
 export default function footerIndex() {
   return (
-    <section className="footerIndex">
+    <footer>
       <div>
         <div className="logo">
           <img src={logo} alt="Gudi Logo" />
@@ -57,6 +57,6 @@ export default function footerIndex() {
           text3="Carnaval"
         />
       </div>
-    </section>
+    </footer>
   );
 }

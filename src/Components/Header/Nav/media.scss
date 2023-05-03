@@ -2,6 +2,11 @@
   div {
     img {
       @include for-phone-only {
+        width: 40vw;
+        padding-left: 3rem;
+      }
+
+      @include for-phone-up {
         width: 18vw;
         padding-left: 0.5rem;
       }
@@ -22,6 +27,10 @@
       opacity: 0;
     }
 
+    @include for-phone-up {
+      opacity: 0;
+    }
+
     @include for-tablet-landscape-up {
       opacity: 1;
       width: 70%;
@@ -37,7 +46,7 @@
 
 .navContainer {
   nav {
-    @include for-phone-only {
+    @include for-phone-up {
       width: 95%;
       padding-left: 5rem;
       justify-content: center;
@@ -51,6 +60,10 @@
 
     ul {
       @include for-phone-only {
+        opacity: 0;
+      }
+
+      @include for-phone-up {
         font-size: 0.8rem;
         gap: 1rem;
       }
@@ -67,7 +80,7 @@
     }
 
     button {
-      @include for-phone-only {
+      @include for-phone-up {
         width: 90%;
         display: flex;
         justify-content: center;

@@ -49,6 +49,10 @@ $light-grey: #afb3b8;
       font-size: 0.8rem;
     }
 
+    @include for-phone-up {
+      font-size: 0.8rem;
+    }
+
     @include for-tablet-landscape-up {
       font-size: 0.7rem;
     }
@@ -59,6 +63,11 @@ $light-grey: #afb3b8;
     font-family: "ArgentumSansLight";
     line-height: 1.5rem;
     padding-bottom: 1.5rem;
+
+    @include for-phone-only {
+      width: 100%;
+      font-size: 1.1rem;
+    }
 
     @include for-tablet-landscape-up {
       width: 90%;
@@ -104,6 +113,12 @@ $light-grey: #afb3b8;
   align-items: center;
 
   @include for-phone-only {
+    width: 50%;
+    height: 20vh;
+    background-size: cover;
+  }
+
+  @include for-phone-up {
     width: 50vw;
     height: 30vh;
     background-size: cover;
@@ -122,6 +137,13 @@ $light-grey: #afb3b8;
     border: 1px solid $white;
     background-color: transparent;
     backdrop-filter: blur(50px);
+
+    @include for-phone-only {
+      font-size: 0.6rem;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+    }
 
     @include for-tablet-landscape-up {
       height: 7vh;
@@ -144,6 +166,11 @@ $light-grey: #afb3b8;
   font-family: "ArgentumSansBold";
 
   @include for-phone-only {
+    width: 45vw;
+    height: 20vh;
+  }
+
+  @include for-phone-up {
     width: 35vw;
     height: 30vh;
   }
@@ -162,6 +189,10 @@ $light-grey: #afb3b8;
     text-align: center;
     letter-spacing: 1px;
 
+    @include for-phone-only {
+      font-size: 1rem;
+    }
+
     @include for-tablet-landscape-up {
       width: 70%;
     }
@@ -172,13 +203,22 @@ $light-grey: #afb3b8;
   width: 6vw;
 
   @include for-phone-only {
+    width: 35%;
+  }
+
+  @include for-phone-up {
     width: 40%;
   }
 }
 
-
 //////// MEDIA QUERY ////////
 @mixin for-phone-only {
+  @media (min-width: 320px) and (max-width: 479px) {
+    @content;
+  }
+}
+
+@mixin for-phone-up {
   @media (min-width: 480px) and (max-width: 768px) {
     @content;
   }

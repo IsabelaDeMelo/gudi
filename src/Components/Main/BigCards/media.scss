@@ -1,5 +1,9 @@
 .container {
   @include for-phone-only {
+    height: 210vh;
+  }
+
+  @include for-phone-up {
     height: 225vh;
   }
 
@@ -14,6 +18,11 @@
 
 .bigCardImg {
   @include for-phone-only {
+    width: 100%;
+    height: 30vh;
+  }
+
+  @include for-phone-up {
     width: 100%;
     height: 40vh;
   }
@@ -32,6 +41,12 @@
 .cardBlue0 {
   @include for-phone-only {
     width: 100%;
+    height: 40vh;
+    padding-left: 1rem;
+  }
+
+  @include for-phone-up {
+    width: 100%;
     height: 35vh;
   }
 
@@ -45,6 +60,10 @@
 
   h2 {
     @include for-phone-only {
+      font-size: 1.7rem;
+    }
+
+    @include for-phone-up {
       font-size: 1.5rem;
     }
 
@@ -63,6 +82,12 @@
 .cardBlue1 {
   @include for-phone-only {
     width: 100%;
+    height: 40vh;
+    padding-left: 1rem;
+  }
+
+  @include for-phone-up {
+    width: 100%;
     height: 35vh;
   }
 
@@ -76,6 +101,10 @@
 
   h2 {
     @include for-phone-only {
+      font-size: 1.6rem;
+    }
+
+    @include for-phone-up {
       font-size: 1.5rem;
     }
 
@@ -94,6 +123,12 @@
 .cardWhite {
   @include for-phone-only {
     width: 100%;
+    height: 40vh;
+    padding-left: 1rem;
+  }
+
+  @include for-phone-up {
+    width: 100%;
     height: 35vh;
   }
 
@@ -108,6 +143,10 @@
 
   h2 {
     @include for-phone-only {
+      font-size: 1.7rem;
+    }
+
+    @include for-phone-up {
       font-size: 1.5rem;
     }
 

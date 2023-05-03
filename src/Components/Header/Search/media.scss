@@ -3,6 +3,12 @@
     width: 100%;
     height: 30vh;
     background-size: cover;
+  }
+
+  @include for-phone-up {
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,6 +24,12 @@
 
   section {
     @include for-phone-only {
+      width: 100%;
+      height: 30vh;
+      padding: 1rem;
+    }
+
+    @include for-phone-up {
       width: 60%;
       height: 30vh;
       padding: 0;
@@ -37,6 +49,10 @@
 
     h1 {
       @include for-phone-only {
+        font-size: 1.7rem;
+      }
+
+      @include for-phone-up {
         font-size: 2rem;
       }
 
@@ -53,6 +69,11 @@
 
     input {
       @include for-phone-only {
+        width: 70vw;
+        height: 5vh;
+      }
+
+      @include for-phone-up {
         width: 55vw;
         height: 5vh;
         font-size: 0.7rem;
@@ -70,6 +91,11 @@
 
     button {
       @include for-phone-only {
+        width: 40%;
+        font-size: 0.7rem;
+      }
+
+      @include for-phone-up {
         width: 100%;
         font-size: 0.7rem;
       }
