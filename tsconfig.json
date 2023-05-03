@@ -4,8 +4,8 @@
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "moduleResolution": "node",
-
+    "moduleResolution": "node", 
+ 
     /* Bundler mode */
     "resolveJsonModule": true,
     "isolatedModules": true,
